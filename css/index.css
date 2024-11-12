@@ -43,6 +43,9 @@ body {
   background-color: #DB241D;
 }
 
+.menu-container{
+  position: relative;
+}
 .menu {
   position: absolute;
   top: 20px;
@@ -55,6 +58,7 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: space-between;
 }
 
 .menu-1{
@@ -65,11 +69,6 @@ body {
   margin-left: 180px;
   display: flex;
   align-items: center;
-}
-/* Estilos iniciales */
-.navbar {
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu-1 ul,
@@ -91,12 +90,16 @@ body {
   display: block;
 }
 
-.logo-1 {
-  width: 0;
+.logo-1, .logo-2{
+  width: 150px;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-.logo-2 {
-  width: 80px;
+.logo-2{
+  height: 80px;
+  transform: translateX(1000px);
 }
 
 .socials {
@@ -136,15 +139,6 @@ body {
 }
 
 #menu {
-  display: none;
-}
-
-.menu-icono {
-  width: 25px;
-}
-
-.menu label {
-  cursor: pointer;
   display: none;
 }
 

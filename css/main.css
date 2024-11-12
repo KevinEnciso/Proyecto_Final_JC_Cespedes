@@ -280,28 +280,45 @@ hr {
     border: 1px solid #000000; /* Establece un borde de 1 píxel sólido negro */
 }
 
-.footer {
-    padding: 100px 0; /* Añade un relleno de 100 píxeles arriba/abajo */
-}
-
-.footer-links {
-    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
-    justify-content: space-between; /* Distribuye el espacio libre entre los elementos */
-}
-
-.link h3 {
-    font-size: 20px; /* Establece el tamaño de la fuente a 20 píxeles */
-    color: #303030; /* Establece el color del texto */
-    margin-bottom: 20px; /* Establece un margen inferior de 20 píxeles */
-}
-
 .socials img {
     margin-right: 15px; /* Establece un margen derecho de 15 píxeles */
 }
 
-.link ul li a {
-    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
-    display: block; /* Muestra el enlace como un bloque */
-    margin-bottom: 10px; /* Establece un margen inferior de 10 píxeles */
-    color: #545454; /* Establece el color del texto */
+.footer {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+  
+  .links h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .links ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #DB241D;
+  border-radius: 50%;
+}
+
+.social:hover {
+  background-color: #DB241D;
+}
+
+.social img {
+  margin: 8px 0 0 10px;
 }
