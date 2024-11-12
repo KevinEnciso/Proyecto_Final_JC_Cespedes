@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'); /* Importa la fuente Poppins desde Google Fonts */
+
+* {
+margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+box-sizing: border-box; /* Hace que el padding y el borde se incluyan en el tamaño total de los elementos */
+text-decoration: none; /* Elimina las decoraciones de texto predeterminadas */
+list-style: none; /* Elimina el estilo de lista predeterminado */
+}
+
+body {
+font-family:'Poppins', sans-serif; /* Aplica la fuente Poppins al cuerpo del documento */
+
+}
+
+.container {
+max-width: 1200px; /* Establece un ancho máximo de 1200px para el contenedor */
+margin: 0 auto; /* Centra el contenedor horizontalmente */
+
+}
+
+.header {
+background-color: #000000; /* Establece el color de fondo de la cabecera */
+display: flex; /* Utiliza el modelo de caja flexible para la disposición de los elementos */
+align-items: center; /* Centra los elementos hijos verticalmente */
+min-height: 100vh; /* Establece una altura mínima del 100% de la altura de la ventana */
+}
+
+.menu {
+position: absolute; /* Posiciona el menú de forma absoluta respecto a su contenedor */
+top: 0; /* Establece la posición superior del menú en 0 */
+left: 0; /* Establece la posición izquierda del menú en 0 */
+right: 0; /* Establece la posición derecha del menú en 0 */
+display: flex; /* Utiliza el modelo de caja flexible para la disposición de los elementos del menú */
+align-items: center; /* Centra los elementos hijos vertical*/
+}
+
+.menu-icono {
+    width: 25px; /* Establece el ancho del icono del menú a 25 píxeles */
+}
+
+.menu label {
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre la etiqueta */
+    display: none; /* Oculta la etiqueta */
+}
+
+.bg {
+    position: absolute; /* Posiciona el elemento absolutamente */
+    width: 700px; /* Establece el ancho a 700 píxeles */
+    z-index: -1; /* Envía el elemento al fondo de la pila */
+    right: 0; /* Posiciona el elemento al extremo derecho */
+}
+
+.esp {
+    position: absolute; /* Posiciona el elemento absolutamente */
+    top: 700px; /* Establece la parte superior a 700 píxeles */
+    bottom: 0; /* Establece la parte inferior a 0 píxeles */
+    width: 348px; /* Establece el ancho a 348 píxeles */
+    transform: translateY(-10%); /* Desplaza el elemento hacia arriba un 10% */
+}
+
+.header-info {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
+    align-items: center; /* Alinea los elementos centrados verticalmente */
+    margin-top: 100px; /* Establece un margen superior de 100 píxeles */
+}
+
+.header-txt {
+    width: 50%; /* Establece el ancho al 50% */
+    padding-right: 35px; /* Añade un relleno a la derecha de 35 píxeles */
+}
+
+.header-txt h1 {
+    font-size: 55px; /* Establece el tamaño de la fuente a 55 píxeles */
+    line-height: 70px; /* Establece la altura de línea a 70 píxeles */
+    font-weight: 400; /* Establece el grosor de la fuente a 400 */
+    color: #303030; /* Establece el color del texto */
+    margin-bottom: px; /* No se especifica un valor para el margen inferior */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+    transform: translateY(-50%); /* Desplaza el elemento hacia arriba un 50% */
+}
+
+.header-txt p {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+    color: #545454; /* Establece el color del texto */
+    margin-bottom: 35px; /* Establece un margen inferior de 35 píxeles */
+    transform: translateY(-50%); /* Desplaza el elemento hacia arriba un 50% */
+}
+
+.btn-1 {
+    display: inline-block; /* Muestra el botón como un bloque en línea */
+    background-color: #000000; /* Establece el color de fondo a negro */
+    padding: 13px 60px; /* Añade un relleno de 13 píxeles arriba/abajo y 60 píxeles izquierda/derecha */
+    border-radius: 25px; /* Establece bordes redondeados de 25 píxeles */
+    margin-bottom: 1px; /* Establece un margen inferior de 1 píxel */
+    color: #ffffff; /* Establece el color del texto a blanco */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+    box-shadow: 0 0 20px rba(0, 0, 0, 0.2); /* Añade una sombra al botón */
+    transform: translateX(100%); /* Desplaza el elemento 100% hacia la derecha */
+}
+
+.btn-1:hover {
+    background-color: #ee9003; /* Cambia el color de fondo a naranja al pasar el ratón por encima */
+}
+
+.header-img {
+    width: 40%; /* Establece el ancho al 50% */
+    transform: translateY(20px);
+}
+
+.header-img img {
+    width: 650px; /* Establece el ancho de la imagen a 650 píxeles */
+    transform: translate(-50%, -40%); /* Desplaza la imagen un 50% hacia la izquierda y un 40% hacia arriba */
+}
+
+.info {
+    padding: 100px; /* Añade un relleno de 100 píxeles */
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
+    justify-content: space-between; /* Distribuye el espacio libre entre los elementos */
+    transform: translateY(-90%); /* Desplaza el elemento un 90% hacia arriba */
+}
+
+.info-1 {
+    width: 300px; /* Establece el ancho a 300 píxeles */
+    padding: 15px 25px; /* Añade un relleno de 15 píxeles arriba/abajo y 25 píxeles izquierda/derecha */
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1); /* Añade una sombra al contenedor */
+    border-radius: 20px; /* Establece bordes redondeados de 20 píxeles */
+    text-align: center; /* Centra el texto */
+    background-color: white; /* Establece el color de fondo a blanco */
+    margin: 20px; /* Establece un margen de 20 píxeles */
+}
+
+.info-1 img {
+    width: 35px; /* Establece el ancho de la imagen a 35 píxeles */
+}
+
+.info-1 h3 {
+    font-size: 18px; /* Establece el tamaño de la fuente a 18 píxeles */
+    color: #303030; /* Establece el color del texto */
+    margin-bottom: 10px; /* Establece un margen inferior de 10 píxeles */
+}
+
+.info-1 p {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+    color: #545454; /* Establece el color del texto */
+}
+
+.nosotros {
+    position: relative; /* Posiciona el elemento relativamente */
+    transform: translateY(-30%); /* Desplaza el elemento un 30% hacia arriba */
+}
+
+hr {
+    height: 5px; /* Altura de la línea */
+    background-color: orange; /* Color de la línea */
+    transform: translateY(-5333%); /* Desplaza la línea un 5333% hacia arriba */
+}
+
+.bg-2 {
+    position: absolute; /* Posiciona el elemento absolutamente */
+    top: 0; /* Establece la parte superior a 0 píxeles */
+    left: 0; /* Establece la parte izquierda a 0 píxeles */
+    width: 300px; /* Establece el ancho a 300 píxeles */
+    z-index: -1; /* Envía el elemento al fondo de la pila */
+}
+
+.nosotros-info {
+    padding: 100px 0; /* Añade un relleno de 100 píxeles arriba/abajo */
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
+    align-items: center; /* Alinea los elementos centrados verticalmente */
+}
+
+.nosotros-img {
+    width: 50%; /* Establece el ancho al 50% */
+}
+
+.nosotros-img img {
+    width: 500px; /* Establece el ancho de la imagen a 500 píxeles */
+}
+
+.nosotros-txt {
+    width: 50%; /* Establece el ancho al 50% */
+}
+
+.nosotros-txt span {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+    color: #ff9f0d; /* Establece el color del texto */
+    font-weight: 700; /* Establece el grosor de la fuente a 700 */
+    margin-bottom: 25px; /* Establece un margen inferior de 25 píxeles */
+}
+
+.nosotros-txt h2 {
+    font-size: 45px; /* Establece el tamaño de la fuente a 45 píxeles */
+    color: #303030; /* Establece el color del texto */
+    margin-bottom: 30px; /* Establece un margen inferior de 30 píxeles */
+}
+
+.nosotros-txt p {
+    font-size: 18px; /* Establece el tamaño de la fuente a 18 píxeles */
+    color: #545454; /* Establece el color del texto */
+    margin-bottom: 50px; /* Establece un margen inferior de 50 píxeles */
+}
+
+.products {
+    padding: 80px 0; /* Añade un relleno de 80 píxeles arriba/abajo */
+    text-align: center; /* Centra el texto */
+    transform: translateY(-15%); /* Desplaza el elemento un 15% hacia arriba */
+}
+
+.products h2 {
+    font-size: 45px; /* Establece el tamaño de la fuente a 45 píxeles */
+    color: #303030; /* Establece el color del texto */
+    margin-bottom: 30px; /* Establece un margen inferior de 30 píxeles */
+}
+
+.products p {
+    font-size: 18px; /* Establece el tamaño de la fuente a 18 píxeles */
+    color: #545454; /* Establece el color del texto */
+    margin-bottom: 70px; /* Establece un margen inferior de 70 píxeles */
+    padding: 0 200px; /* Añade un relleno de 0 píxeles arriba/abajo y 200 píxeles izquierda/derecha */
+}
+
+.product-info {
+    display: grid; /* Utiliza el modelo de cuadrícula para el contenedor */
+    grid-template-columns: repeat(3, 1fr); /* Divide la cuadrícula en 3 columnas iguales */
+    grid-auto-rows: auto; /* Establece la altura automática de las filas */
+    grid-gap: 3rem; /* Establece un espacio de 3 rem entre las filas y columnas */
+}
+
+.product {
+    padding-bottom: 35px; /* Añade un relleno inferior de 35 píxeles */
+    text-align: center; /* Centra el texto */
+    box-shadow: 10px 10px 20px rgb(8, 8, 8); /* Añade una sombra al contenedor */
+    border-radius: 25px; /* Establece bordes redondeados de 25 píxeles */
+    margin: 20px; /* Establece un margen de 20 píxeles */
+    background-color: white; /* Establece el color de fondo a blanco */
+}
+
+.product img {
+    transform: translateY(10%); /* Desplaza la imagen un 10% hacia abajo */
+    width: 50%; /* Establece el ancho de la imagen al 50% */
+    height: 140px; /* Establece la altura de la imagen a 140 píxeles */
+    border-radius: 25px 25px 0 0; /* Establece bordes redondeados en la parte superior de la imagen */
+}
+
+.product h3 {
+    font-size: 20px; /* Establece el tamaño de la fuente a 20 píxeles */
+    color: #303030; /* Establece el color del texto */
+    margin-top: 15px; /* Establece un margen superior de 15 píxeles */
+}
+
+.hr2 {
+    height: 5px; /* Altura de la línea */
+    background-color: rgb(0, 0, 0); /* Color negro */
+    transform: translateY(-500%); /* Desplaza la línea un 500% hacia arriba */
+}
+
+.product p {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+    padding: 30px; /* Añade un relleno de 30 píxeles */
+    color: #545454; /* Establece el color del texto */
+    margin: 0; /* Elimina el margen */
+}
+
+.product span {
+    background-color: #ff9f0d; /* Establece el color de fondo a naranja */
+    padding: 10px; /* Añade un relleno de 10 píxeles */
+    color: #ffff; /* Establece el color del texto a blanco */
+    border-radius: 15px; /* Establece bordes redondeados de 15 píxeles */
+}
+
+.btn-3 {
+    background-color: #000000; /* Establece el color de fondo a negro */
+    padding: 10px; /* Añade un relleno de 10 píxeles */
+    color: #ffffff; /* Establece el color del texto a blanco */
+    border-radius: 15px; /* Establece bordes redondeados de 15 píxeles */
+}
+
+.hr {
+    border: 1px solid #000000; /* Establece un borde de 1 píxel sólido negro */
+}
+
+.footer {
+    padding: 100px 0; /* Añade un relleno de 100 píxeles arriba/abajo */
+}
+
+.footer-links {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor */
+    justify-content: space-between; /* Distribuye el espacio libre entre los elementos */
+}
+
+.link h3 {
+    font-size: 20px; /* Establece el tamaño de la fuente a 20 píxeles */
+    color: #303030; /* Establece el color del texto */
+    margin-bottom: 20px; /* Establece un margen inferior de 20 píxeles */
+}
+
+.socials img {
+    margin-right: 15px; /* Establece un margen derecho de 15 píxeles */
+}
+
+.link ul li a {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16 píxeles */
+    display: block; /* Muestra el enlace como un bloque */
+    margin-bottom: 10px; /* Establece un margen inferior de 10 píxeles */
+    color: #545454; /* Establece el color del texto */
+}
