@@ -66,6 +66,30 @@ body {
   display: flex;
   align-items: center;
 }
+/* Estilos iniciales */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-1 ul,
+.menu-2 ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-1 ul li, 
+.menu-2 ul li {
+  list-style: none;
+}
+
+.menu-1 ul li a,
+.menu-2 ul li a {
+  padding: 20px;
+  color: #ffffff;
+  display: block;
+}
 
 .logo-1 {
   width: 0;
