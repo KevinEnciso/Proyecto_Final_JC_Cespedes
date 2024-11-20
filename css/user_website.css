@@ -387,6 +387,12 @@ body {
   display: inline-block;
 }
 
+#user-name {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
 @media (max-width: 991px) {
 
   .menu {
